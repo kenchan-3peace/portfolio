@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>kentaro hayashi portforio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="QAエンジニア、テストエンジニア、Web制作を行うCodona Style 林 健太郎のフォートフォリオです">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="home">
+        <a href="index.html">Codona Style</a>
+      </div>
+      <div class="menu">
+        <a href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="https://twitter.com/CodonaStyle"><img src="image/twitter-logo.png" width="25px"></a>
+        <a href="https://www.wantedly.com/id/kentarou_hayashi_h"><img src="image/Wantedly_Mark_LightBG.png" width="30px"></a>
+        <a href="https://www.linkedin.com/in/kenchan3peace/"><img src="image/LI-In-Bug.png" width="25px"></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <section class="first-view">
+        <div class="site-title">
+          <p class="main-title">This is Kentaro Hayashi's<br>Portfolio Website</p>
+          <p class="sub-title">QA/TEST engineer and a growing front-end engineer</p>
+        </div>
+        <div class="top-img">
+          <img src="image/top-img.png">
+        </div>
+        <div class="scrolldown"><span>Scroll</span></div>
+      </section>
+      <section id="about" class="about-section fadein">
+        <div class="section-title">
+          <div class="title-en"><h2>ABOUT</h2></div>
+          <div class="title-ja">--私について--</div>
+          <div class="line"></div>
+        </div>
+        <div class="my-info">
+          <img class="my-icon" src="image/myicon.png">
+          <div id="my-detail">
+            <p id="my-name">Kentaro Hayashi</p>
+            <p id="my-history">
+            1981年生まれ、20歳の時にIT企業に就職し海外向けフィーチャーフォンの検証業務を開始。<br>
+            海外向けから国内向けにシフトしその後はスマートフォンの検証業務を経験。<br>
+            検証で必要になるWebサイトをHTML、CSS、JS、BML、WMLなどを使用し作成。<br>
+            また検証に伴うWebサーバーやStraamingサーバの構築などを行う。<br>
+            その後はスマホ自体の検証からは離れ、Webシステム、アプリなどを中心に検証をする。<br>
+            2021年7月、フリーランスとして活動を開始。<br>
+            QA/テストエンジニアをやりながらWeb制作を勉強し今に至る。<br>
+            今後はQAだけでなくWeb制作の活動も増やしていく。
+            </p>
+          </div>
+              
+        </section>
+        <section id="works" class="work-section fadein">
+          <div class="section-title">
+            <div class="title-en"><h2>WORK</h2></div>
+            <div class="title-ja">--実績--</div>
+            <div class="line"></div>
+          </div>
+          <div class="work-info">
+            <div class="work-img"><img src="image/socialtech.png">
+              <p class="work-title">架空のコーポレートサイト</p>
+            </div>  
+            <div class="work-img center"><img src="image/Myprofile.png">
+              <p class="work-title">架空のプロフィールサイト</p>
+            </div>
+            <div class="work-img"><img src="image/hairtech.png">
+              <p class="work-title">架空の美容室サイト</p>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact-section fadein">
+          <div class="section-title">
+            <div class="title-en"><h2>CONTACT</h2></div>
+            <div class="title-ja">--お問い合わせ--</div>
+            <div class="line"></div>
+          </div>
+          <p id="contact-text">QA/TESTエンジニア及びWeb制作に関するお仕事の依頼は以下入力フォームよりご連絡ください。</p>
+            <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+              <div id="nama-email">
+                <input class="form-style" type="text" name="name" placeholder="Your Name">
+                <input class="form-style" type="text" name="email" placeholder="Your Email" />
+              </div>
+              <div id="contact-message">
+                <textarea placeholder="message..." class="message-style" name="message"></textarea>
+              </div>
+              <div id="contact-button">
+               <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="fcf53e53-b96d-4097-8779-6e40ffa885d0">
+                <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
+                <input type="hidden" name="replyTo" value="k.hayashi.codona@gmail.com">
+                <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                <input class="btns" type="submit" value="Submit" />
+              </div>
+            </form>
+          </section>
+    </article>
+  </main>
+  <footer>
+    <div class="footer-nav">
+      <div class="menu">
+        <a href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
+        <a href="#contact">CONTACT</a><br>
+        <a href="https://twitter.com/CodonaStyle"><img src="image/twitter-logo.png" width="25px"></a>
+        <a href="https://www.wantedly.com/id/kentarou_hayashi_h"><img src="image/Wantedly_Mark_LightBG.png" width="30px"></a>
+        <a href="https://www.linkedin.com/in/kenchan3peace/"><img src="image/LI-In-Bug.png" width="25px"></a><br>
+        <p id="copy">&copy; 2023 kentaro hayashi. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
