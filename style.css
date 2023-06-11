@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 768px) {
+
 
 /*========= スクロールダウンのためのCSS ===============*/
 
@@ -68,22 +68,13 @@
   background: #000000;
 }
 
-/*========= レイアウトのためのCSS ===============*/
-
 body {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 0px;
   margin: 0px;
 }
-header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-nav{
+
+#nav{
   display: flex;
   margin: 20px auto 20px auto;
   flex-wrap: wrap;
@@ -95,7 +86,6 @@ nav{
   font-size: 25px;
   display: flex;
   padding-left: 10px;
-
   max-width: 960px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -123,31 +113,70 @@ nav{
   color: #0d0d0d;
 }
 
-.menu > a{
+.menu > a, .footer-menu > a, #nav-sp > a {
   margin-right: 20px;
-}
-
-.menu > a {
   color: #706e6e;
   text-decoration: none;
 }
 
-.menu > a:link {
+.menu > a:link, .footer-menu > a:link, #nav-sp > a:link  {
   color: #706e6e;
 }
 
-.menu > a:visited {
+.menu > a:visited, .footer-menu > a:visited, #nav-sp > a:visited {
   menue: #706e6e;
 }
 
-.menu > a:hover {
+.menu > a:hover, .footer-menu > a:hover, #nav-sp > a:hover {
   color: #706e6e;
   text-decoration: underline;
 }
 
-.menu > a:active {
+.menu > a:active, .footer-menu > a:active, #nav-sp > a:active {
   color: #706e6e;
 }
+
+header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 50%;
+  border-top: 8px solid rgba(130, 128, 240, 0.3);
+  margin: 5px auto 30px auto;
+}
+
+.title-en, .title-ja {
+  text-align: center;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.title-ja {
+  margin-top: -100px;
+}
+
+
+#about > .section-title > .title-en > h2 {
+  margin-top: -10px;
+}
+
+
+
+
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+@media screen and (min-width: 768px) {
+
+ #nav-sp, #menu-sp, #close {
+    display: none;
+  }
+
 .first-view {
   display: flex;
   justify-content: center;
@@ -190,20 +219,6 @@ nav{
   margin-top: auto;
 }
 
-.title-en, .title-ja {
-  margin-top: -70px;
-  text-align: center;
-  font-family: 'Kosugi Maru', sans-serif;
-}
-.title-ja {
-  margin-top: -100px;
-}
-.line {
-  width: 50%;
-  border-top: 8px solid rgba(130, 128, 240, 0.3);
-  margin: 5px auto 100px auto;
-}
-
 h2 {
   color: rgb(197, 197, 197);
   font-size: 100px;
@@ -244,8 +259,6 @@ h2 {
 .my-info {
   display: flex;
   justify-content: center;
-  height: 400px;
-  margin-top: -50px;
 }
 
 #my-detail {
@@ -340,7 +353,7 @@ form .btns:hover{
     background-color: #706e6e;
 }
 
-.footer-nav > .menu {
+.footer-nav > .footer-menu {
   text-align: center;
   background-color: #dddcdc;
 }
@@ -361,3 +374,279 @@ form .btns:hover{
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  /* * {
+    outline: 2px solid blue;
+  } */
+
+  .menu {
+    display: none;
+  }
+
+  #close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px auto 20px auto;
+    display: none;
+  }
+
+  #menu-sp {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px auto 20px auto;
+  }
+
+  #nav-sp {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: none;
+    z-index: 100;
+  }
+
+#nav-sp > a {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #706e6e;
+    text-decoration: none;
+  }
+  
+#nav-sp > a:link  {
+    color: #706e6e;
+  }
+  
+#nav-sp > a:visited {
+    menue: #706e6e;
+  }
+  
+#nav-sp > a:hover {
+    color: #706e6e;
+    text-decoration: underline;
+  }
+
+#nav-sp > a:active {
+    color: #706e6e;
+  }
+  
+  .first-view {
+    display: flex;
+    flex-flow: column;
+    height:100vh;
+  }
+  
+  .site-title {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  
+  .main-title{
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    color: #4d4c4c;
+    text-align: center;
+  }
+  .sub-title{
+    font-family: 'Kosugi Maru', sans-serif;
+    margin-top: -25px;
+    font-size: 12px;
+    font-weight: 250;
+    letter-spacing: 0.05em;
+    color: #888787;
+    text-align: center;
+  }
+  
+  .top-img {
+    margin-top:-200px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .top-img > img {
+    width: 200px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  
+
+  
+  /* .line {
+    width: 50%;
+    border-top: 8px solid rgba(130, 128, 240, 0.3);
+    margin: 5px auto 100px auto;
+  } */
+  
+  h2 {
+    color: rgb(197, 197, 197);
+    font-size: 100px;
+  }
+  
+  .work-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-flow: column;
+    margin-right: 20px;
+  }
+  
+  .work-img > img{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+  }
+  .center {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  
+  .work-section {
+    margin-bottom: 100px;
+  }
+  
+  .my-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #999;
+    margin: auto;
+  }
+  
+  .my-info {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+  
+  #my-detail {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #my-name {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+    margin-top: -25px;
+    text-align: center;
+  }
+  
+  #my-history {
+    width: 100%;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #706e6e;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .work-title {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #706e6e;
+  }
+  
+  #nama-email, #contact-message, #contact-button {
+    text-align: center;
+  }
+  
+  form {
+    height: 400px;
+  }
+  
+  .form-style{
+    font-family: 'Kosugi Maru', sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #999;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #706e6e;
+  }
+  input[name="name"] {
+    width: 200px;
+  }
+  input[name="email"] {
+    width: 200px;
+  }
+  textarea[name="message"] {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+    color: #706e6e;
+    margin-top: 30px;
+    resize: none;
+    width:90%;
+    height:200px;
+    box-sizing: border-box;
+  }
+  
+  #contact-text {
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: center;
+    color: #706e6e;
+  
+    margin-bottom: 100px;
+  }
+  
+  form .btns{
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 6px 25px;
+    color: #706e6e;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #706e6e;
+    cursor: pointer;
+    transition-duration:0.3s;
+      -webkit-transition-duration:0.3s;
+      -moz-transition-duration:0.3s;
+      -o-transition-duration:0.3s;
+      -ms-transition-duration:0.3s;
+  } 
+  form .btns:hover{
+      color: #ffffff;
+      background-color: #706e6e;
+  }
+  
+  .footer-nav > .footer-menu {
+    text-align: center;
+    background-color: #dddcdc;
+  }
+  
+  #copy {
+    margin-bottom: -16px;
+  }
+  
+  .fadein {
+    opacity : 0;
+    transform : translate(0, 100px);
+    transition:all 1s;
+  }
+   
+  .fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+  }
+
+}
