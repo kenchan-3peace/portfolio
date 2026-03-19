@@ -5,7 +5,6 @@
 
 /*スクロールダウン全体の場所*/
 /*スクロールダウン全体の場所*/
-/*スクロールダウン全体の場所*/
 .scrolldown {
   /*描画位置※位置は適宜調整してください*/
   position: absolute;
@@ -126,7 +125,7 @@ body {
 }
 
 .menu > a:visited, .footer-menu > a:visited, #nav-sp > a:visited {
-  menue: #706e6e;
+  color: #706e6e;
 }
 
 .menu > a:hover, .footer-menu > a:hover, #nav-sp > a:hover {
@@ -433,7 +432,7 @@ form .btns:hover{
   }
   
 #nav-sp > a:visited {
-    menue: #706e6e;
+   color: #706e6e;
   }
   
 #nav-sp > a:hover {
